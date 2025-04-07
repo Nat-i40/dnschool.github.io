@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>sing in</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 589 lugx gaming
+
+https://templatemo.com/tm-589-lugx-gaming
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="" style="width: 158px;">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="C:/Users/buchu/Desktop/templatemo_589_lugx_gaming/index.html">Back </a></li>
+                     
+                    
+                      
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3> SIGN IN</h3>
+          <form action="login.php" method="POST">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-page section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="left-text">
+            <div class="section-heading">
+              <h6>sing page</h6>
+              <h2> fill the form correct name of you and sumbit it</h2>
+            </div>
+            <form action="register.php" method="POST">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" required><br><br>
+      
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+      
+              <label for="password">Password:</label><br>
+              <input type="password" id="password" name="password" required><br><br>
+
+              <lablel for="image">Insert the payment image:</lablel><br><br>
+              <input type="file" id="imageUpload" accept="image/*">
+    <img id="imagePreview" src="#" alt="Selected Image" style="display:none; width:200px; height:auto;"> <br><br>
+
+    <script>
+      const imageUpload = document.getElementById('imageUpload');
+      const imagePreview = document.getElementById('imagePreview');
+
+      imageUpload.addEventListener('change', function(event) {
+        const file = event.target.files[0]; // Get the first selected file
+
+        if (file) {
+          const reader = new FileReader();
+
+          reader.onload = function(e) {
+            imagePreview.src = e.target.result;  // Set the image source to the data URL
+            imagePreview.style.display = 'block'; // Show the image
+          }
+
+          reader.readAsDataURL(file); // Read the file as a data URL
+        } else {
+          imagePreview.src = "#"; // Clear the image
+          imagePreview.style.display = 'none'; // Hide the image
+        }
+      });
+    </script>
+      
+      
+              <a href="C:\xampp\htdocs\project\login.htm">I ALREADY  HAVE AN ACCOUNT </a>
+              <br><BR>
+              
+                <li><a href="login.html" message="pay">I DIDN'T PAY FOR THE PACKAGE </a>
+                <br>
+                <br>
+                <BR>
+              <input type="submit" value="Register">
+          </form>
+      
+                     
+                    </div>
+                   
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+          
+            </p>
+            <ul>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-content">
+            <div class="row">
+              <div class="col-lg-12">
+                <div id="map">
+                  <iframe src="" width="100%" height="325px" frameborder="0" style="border:0; border-radius: 23px;" allowfullscreen=""></iframe>
+                </div>
+              </div>
+             
+
+  <footer>
+    <div class="container">
+      <div class="container">
+        <div class="col-lg-12">
+          <p>Copyright © 2025 DN WEBSITE LEARNING. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">DN COODERS</a></p>
+        </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>

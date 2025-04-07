@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Received Messages</title>
+</head>
+<body>
+  <h1>Received Messages</h1>
+  <ul id="messageList"></ul>
+
+  <script>
+    const messageList = document.getElementById("messageList");
+
+    function displayMessage() {
+      const latestMessage = localStorage.getItem("latestMessage");
+
+      if (latestMessage) {
+        const listItem = document.createElement("li");
+        listItem.textContent = latestMessage;
+        messageList.appendChild(listItem);
+      }
+    }
+
+    // Display the message on page load
+    displayMessage();
+
+    // Optional:  Automatically check for updates every few seconds (not ideal, but better than nothing)
+    setInterval(displayMessage, 3000);  // Check every 3 seconds
+  </script>
+</body>
+</html>
